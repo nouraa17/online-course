@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Landing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-4">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">IslamOsama.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Instructors</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Web</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">AI</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Disabled</a>
+              </li> -->
+              <li class="nav-item ms-5">
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="input-group-text" id="basic-addon2">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item me-3">
+                    <a class="nav-link fst-normal active" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-secondary" href="#">New Member?</a>
+                </li>
+            </ul>      
+          </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Course Intro Section -->
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <!-- Replace with an image or video -->
+                <img style="width:80%; height: 400px;" src="imgs/web-devlopment.jpg" class="img-fluid" alt="Course Image">
+                <!-- Example for video -->
+                <!-- <video class="img-fluid" controls>
+                    <source src="path/to/course-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+            <div class="col-md-4">
+                <h1>Course Title</h1>
+                <p class="lead">Instructor: John Doe</p>
+                <p><strong>Duration:</strong> 10 weeks</p>
+                <p><strong>Price:</strong> $199</p>
+                <a href="#" class="btn btn-primary btn-lg">Enroll Now</a>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <!-- Course Information Section -->
+        <div class="row mt-4 mb-5">
+            <div class="col-12">
+                <h2>Course Information</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at odio sit amet purus venenatis efficitur. Nullam vitae nulla a odio mollis tincidunt. Curabitur sit amet cursus nisi, in scelerisque purus.</p>
+            </div>
+        </div>
+        
+        <!-- Payment Info and Packages Section -->
+        <div class="row mt-4 mb-5">
+            <div class="col-12">
+                <h2>Packages</h2>
+                <div class="card-deck mt-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Basic Package</h5>
+                            <p class="card-text">Includes access to all course materials.</p>
+                            <p><strong>Price:</strong> $99</p>
+                            <a href="#" class="btn btn-primary">Choose Basic</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Package</h5>
+                            <p class="card-text">Includes access to all course materials and live Q&A sessions.</p>
+                            <p><strong>Price:</strong> $199</p>
+                            <a href="#" class="btn btn-primary">Choose Premium</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">VIP Package</h5>
+                            <p class="card-text">Includes everything in Premium plus 1-on-1 coaching sessions.</p>
+                            <p><strong>Price:</strong> $299</p>
+                            <a href="#" class="btn btn-primary">Choose VIP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recommended Related Content Section -->
+        <div class="row mt-4 mb-5">
+            <div class="col-12">
+                <h2>Related Courses</h2>
+                <div class="card-deck mt-4 d-flex">
+                    <div class="card col-4 me-3">
+                        <img src="imgs/website-development-process-diagram.jpg" style="height: 300px;" class="card-img-top" alt="Recommended Course 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Recommended Course 1</h5>
+                            <p class="card-text">Short description of the recommended course.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card col-4 me-3">
+                        <img src="imgs/2021_12_Programming-vs-Web-Development.jpg" style="height: 300px;" class="card-img-top" alt="Recommended Course 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Recommended Course 2</h5>
+                            <p class="card-text">Short description of the recommended course.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card col-4 me-3">
+                        <img src="imgs/images.jpg" class="card-img-top" style="height: 300px;" alt="Recommended Course 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Recommended Course 3</h5>
+                            <p class="card-text">Short description of the recommended course.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Instructor Portfolio Section -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <h2>Instructor</h2>
+                <hr>
+                <div class="media">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" class="mr-3 rounded-circle" alt="Instructor Image" style="width:150px;">
+                    <div class="media-body">
+                        <h5 class="mt-0">John Doe</h5>
+                        <p>John Doe is an experienced professional in the field of XYZ with over 20 years of experience. He has taught thousands of students worldwide and is known for his engaging teaching style and deep knowledge of the subject.</p>
+                        <p>Check out more about John Doe:</p>
+                        <ul style="list-style: none;" class="d-flex">
+                            <li class="me-4"><a href="#" target="_blank" class="text-secondary fs-3"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li class="me-4"><a href="#" target="_blank" class="text-secondary fs-3"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li class="me-2"><a href="#" target="_blank" class="text-secondary fs-3"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-primary text-light text-center py-4">
+        <p class="p-0 m-0 mb-3">&copy; 2024 IslamOsama.com. All rights reserved.</p>
+        <ul style="list-style: none; margin: auto;" class="d-flex justify-content-center">
+            <li class="me-4"><a href="#" target="_blank" class="text-light fs-3"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="me-4"><a href="#" target="_blank" class="text-light fs-3"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="me-2"><a href="#" target="_blank" class="text-light fs-3"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
