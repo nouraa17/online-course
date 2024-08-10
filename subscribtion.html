@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+        <!-- bootstrap cdn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+    
+    <nav>
+        <div class="py-4 text-center bg-light border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+                        <a class="navbar-brand" href="#">
+                            <h5><i class="fa-solid fa-user-graduate fs-2"></i> IslamOsama.com</h5>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="d-flex ps-0 mb-3 mb-md-0 align-items-center" style="list-style: none;">
+                            <li class="nav-item me-3">
+                                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link active" href="myLearning.html">My Learning</a>
+                            </li>
+                            <li class="dropdown me-5">
+                                <a class="dropdown-toggle btn btn-outline-success small-screen" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Courses
+                                </a>
+                                <ul class="dropdown-menu bg-dark explore-menu">
+                                    <div class="row mt-3">
+                                        <div class="col-md-5 border-end">
+                                            <div class="pb-2 ms-3 border-bottom bg-dark border-0 text-white rounded-0">
+                                                <a href="#" class="link-light text-decoration-none search-link"
+                                                    onmouseover="searchMenu(this)">
+                                                    Data Science
+                                                </a>
+                                            </div>
+                                            <div class="pb-2 ms-3 border-bottom bg-dark border-0 text-white rounded-0">
+                                                <a href="#" class="link-light text-decoration-none search-link"
+                                                    onmouseover="searchMenu(this)">
+                                                    Operating Systems
+                                                </a>
+                                            </div>
+                                            <div class="pb-2 ms-3 border-bottom bg-dark border-0 text-white rounded-0">
+                                                <a href="#" class="link-light text-decoration-none search-link"
+                                                    onmouseover="searchMenu(this)">
+                                                    Frontend Development
+                                                </a>
+                                            </div>
+                                            <div class="pb-2 ms-3 border-bottom bg-dark border-0 text-white rounded-0">
+                                                <a href="#" class="link-light text-decoration-none search-link"
+                                                    onmouseover="searchMenu(this)">
+                                                    Backend Development
+                                                </a>
+                                            </div>
+                                            <div class="pb-2 ms-3 border-bottom bg-dark border-0 text-white rounded-0">
+                                                <a href="#" class="link-light text-decoration-none search-link"
+                                                    onmouseover="searchMenu(this)">
+                                                    DevOps
+                                                </a>
+                                            </div>
+                                            <div class="pb-2 ms-3 border-bottom bg-dark border-0 text-white rounded-0">
+                                                <a href="#" class="link-light text-decoration-none search-link"
+                                                    onmouseover="searchMenu(this)">
+                                                    Computer Organization
+                                                </a>
+                                            </div>
+                                            <div class="pb-2 ms-3 border-bottom bg-dark border-0 text-white rounded-0">
+                                                <a href="#" class="link-light text-decoration-none search-link"
+                                                    onmouseover="searchMenu(this)">
+                                                    System Architecture
+                                                </a>
+                                            </div>
+                                            <div class="pb-2 ms-3 bg-dark border-0 text-white rounded-0">
+                                                <a href="#" class="link-light text-decoration-none search-link"
+                                                    onmouseover="searchMenu(this)">
+                                                    Embedded Systems
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 position-relative" id="search-container">
+                                            <div class="card text-bg-dark border-0 d-none" id="data-science">
+                                                <div class="card-body">
+                                                    <div class="card-title fs-2">Data Science</div>
+                                                    <div class="card-subtitle text-secondary"
+                                                        style="font-size: 0.75rem;">Explore our courses
+                                                        designed to
+                                                        fit into your life.</div>
+                                                    <div class="card-text mt-2 ms-2">
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #1</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #2</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #3</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #4</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #5</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2  course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #6</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card text-bg-dark border-0 d-none" id="operating-systems">
+                                                <div class="card-body">
+                                                    <div class="card-title fs-2">Operating Systems</div>
+                                                    <div class="card-subtitle text-secondary"
+                                                        style="font-size: 0.75rem;">Explore our courses
+                                                        designed to
+                                                        fit into your life.</div>
+                                                    <div class="card-text mt-2 ms-2">
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #1</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #2</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #3</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #4</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #5</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #6</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #6</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #6</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2 pb-2 course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i>
+                                                            Course #6</a>
+                                                        <a href="#"
+                                                            class="link-light text-decoration-none d-block ps-2  course-link"><i
+                                                                class="fa-brands fa-leanpub fs-5"></i> Very
+                                                            long
+                                                            Course title here</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="imgs/creativity(2).png" alt="creativity image"
+                                                class="position-absolute bottom-0 end-0"
+                                                style="width: 10rem; opacity: 40%;">
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="ms-md-2 ms-1">
+                                <form class="position-relative" role="search" style="min-width: 20vw;">
+                                    <input class="form-control small-screen" type="search"
+                                        placeholder="What do you want to learn?" aria-label="Search">
+                                    <button class="position-absolute small-screen top-0 end-0 rounded btn btn-success"
+                                        type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 d-flex justify-content-center justify-content-md-end align-items-center" style="z-index: 999;">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown dropdown-center user-dropdown">
+                                <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="true">
+                                    <img class="img-xs rounded-circle" src="imgs/avatar-default.svg"
+                                        alt="Profile image" />
+                                </a>
+                                <div class="dropdown-menu dropdown-center navbar-dropdown"
+                                    aria-labelledby="UserDropdown">
+                                    <div class="dropdown-header text-center">
+                                        <img class="img-md rounded-circle" src="imgs/avatar-default.svg"
+                                            alt="Profile image" width="80" height="80" />
+                                        <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                                        <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+                                    </div>
+                                    <a class="dropdown-item">My Profile</a>
+                                    <a class="dropdown-item">Sign Out</a>
+                                    <p class="footer" style="padding-top: 15px; font-size: 9px; text-align: center">
+                                        Privacy Policy . Terms . Cookies
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+</div>
+ <div class="container mt-5">
+    <h2 class="text-center">Invest in yourself</h2>
+
+    
+        <div class="row d-flex justify-content-center mt-5 mb-5">
+
+          <div class="col-5 text-start">
+            <p class="text-warp"> <i class="bi bi-check2 fs-3"></i> More than 1,000 video courses in Arabic.</p>
+            <p> <i class="bi bi-check2 fs-3"></i>Taught by renowned experts in the Arab world.</p>
+          </div>
+          <div class="col-5 text-start ">
+           <p> <i class="bi bi-check2 fs-3"></i>Unlimited access to all courses on web and Android app.</p>
+           <p> <i class="bi bi-check2 fs-3"></i>Certificates upon courses completion. </p>
+          </div>
+           
+          
+          
+        </div>
+        
+
+      
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 bg-light w-100 ">
+                    <div class="card-body ">
+                        <h5 class="card-title">Monthly Plan</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">22.00 USD/month</h6>
+                        <p></p>
+                        <p class="card-text fst-italic">Charged monthly</p>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card h-100  bg-light w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Yearly plan</h5>
+                        <h6 class="card-subtitle mb-2  text-decoration-line-through">22.00 USD</h6>
+                        <p class="card-text text-primary fw-bold">Only 11.00 USD/month</p>
+                        <p class="card-text fst-italic">Charged as annual payment of 132 USD</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 " >
+                    <p class="btn">Apply promo code</p>
+                    <form  >
+                        <div class="mb-3 input-group">
+
+                            <input type="email" class="form-control mx-2 bg-light border-success " placeholder="discount code " id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <button type="submit" class="btn btn-outline-success ">Apply</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+           
+            
+        </div>
+
+
+        
+         <div class=" d-grid  col-6 mx-auto mt-5  mb-5">
+            
+                <button type="button" class="btn btn-dark text-center">Proceed</button>
+
+            
+           
+         </div>
+       
+ </div>
+ <footer class="bg-dark mt-5">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-lg-3 col-10 me-auto mb-4">
+                <a class="link-light text-decoration-none" href="#">
+                    <h5><i class="fa-solid fa-user-graduate fs-2"></i>
+                        IslamOsama.com</h5>
+                </a>
+            </div>
+
+            <div class="col-lg-5 col-8">
+                <h5 class="text-white mb-3">Links</h5>
+
+                <ul class="d-flex flex-wrap flex-column" style="list-style: none;">
+                    <li><a href="#" class="footer-menu-link">Story</a></li>
+                    <li><a href="#" class="footer-menu-link">Products</a></li>
+                    <li><a href="#" class="footer-menu-link">Privacy policy</a></li>
+                    <li><a href="#" class="footer-menu-link">FAQs</a></li>
+                    <li><a href="#" class="footer-menu-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-4">
+                <h5 class="text-white mb-3">Social</h5>
+
+                <ul class="d-flex">
+                    <li><a href="#" class="social-icon-link fa-brands fa-youtube"></a></li>
+                    <li><a href="#" class="social-icon-link fa-brands fa-whatsapp"></a></li>
+                    <li><a href="#" class="social-icon-link fa-brands fa-instagram"></a></li>
+                    <li><a href="#" class="social-icon-link fa-brands fa-skype"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

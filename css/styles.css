@@ -7,3 +7,233 @@
 /* .progress-bar {
     height: 40px;
 } */
+
+.explore-menu {
+    min-width: 40vw;
+}
+
+.search-link:hover {
+    font-size: large;
+    color: #bce1fd;
+}
+
+.course-link:hover {
+    transform: translateX(10px);
+    color: #49df99 !important;
+}
+
+.dropdown-center {
+    transform: translateX(-35%);
+}
+
+.image-center {
+    position: absolute; 
+    margin: auto; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.course-item:hover {
+    transform: scale(1.02);
+} 
+
+.course-item {
+    transition: transform 0.5s ease; 
+}
+
+@media (max-width: 575px) {
+    .small-screen {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .explore-menu {
+        min-width: 80vw;
+    }
+}
+
+.footer-menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+/* body{
+    background-image: url("/imgs/2course.jpg");
+    background-size:cover;
+} */
+.icon-lg {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.card {
+    box-shadow: 0 20px 27px 0 rgba(226, 220, 220, 0.05);
+}
+a {
+    text-decoration:none;  
+}
+.backtrans{
+    background-color: transparent;
+}
+.adjimg{
+    height: 200px;
+    width:100%;
+}
+/* .course-card {
+    height: 350px; /* Adjust the value as needed 
+    overflow: auto;}
+    */
+   
+/* .desc{
+    color:#fff;    
+} */
+
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+    /* background: linear-gradient(45deg, #ce1e53, #8f00c7); */
+
+        background-image: url("/images/2course.jpg");
+        background-size:cover;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px 45px;
+    box-shadow: 5px 25px 35px #3535356b;
+}
+
+.wrapper label {
+    display: block;
+    padding-bottom: 0.2rem;
+}
+
+.wrapper .form .row {
+    padding: 0.6rem 0;
+}
+
+.wrapper .form .row .form-control {
+    box-shadow: none;
+}
+
+.wrapper .form .option {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+.wrapper .form .option input {
+    opacity: 0;
+}
+
+.wrapper .form .checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+}
+
+.wrapper .form .option input:checked~.checkmark:after {
+    display: block;
+}
+
+.wrapper .form .option:hover .checkmark {
+    background: #f3f3f3;
+}
+
+.wrapper .form .option .checkmark:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: linear-gradient(45deg, #ce1e53, #8f00c7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s;
+}
+
+.wrapper .form .option input[type="radio"]:checked~.checkmark {
+    background: #fff;
+    transition: 300ms ease-in-out 0s;
+}
+
+.wrapper .form .option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#sub {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+#sub:focus {
+    outline: none;
+}
+
+@media(max-width: 768.5px) {
+    .wrapper {
+        margin: 30px;
+    }
+
+    .wrapper .form .row {
+        padding: 0;
+    }
+}
+
+@media(max-width: 400px) {
+    .wrapper {
+        padding: 25px;
+        margin: 20px;
+    }
+}
+
+.card-body  .read-btn:hover  {
+    font-size: large;
+    box-shadow: 5px 5px rgba(231, 38, 135, 0.089);
+    
+}
+
+.card .blog-image:hover{
+    opacity: 0.5;
+    
+}
