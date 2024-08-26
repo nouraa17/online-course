@@ -1,4 +1,6 @@
 /********** Template CSS **********/
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 :root {
     --primary: #198754;
     --light: #F0FBFC;
@@ -536,8 +538,7 @@ a {
     color:#fff;    
 } */
 
-/* Importing fonts from Google */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 
 /* Reseting */
 * {
@@ -555,9 +556,9 @@ body {
     min-height: 100vh;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .wrapper {
     max-width: 800px;
