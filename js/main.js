@@ -56,10 +56,10 @@
     
     // Back to top button
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 600) {
+        if ($(this).scrollTop() > 200) {
             $('.back-to-top').fadeIn('slow');
         } else {
-            $('.back-to-top').fadeOut('slow');
+            $('.back-to-top').hide();
         }
     });
     $('.back-to-top').click(function () {
